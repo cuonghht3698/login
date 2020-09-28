@@ -1,0 +1,38 @@
+.authen{
+  max-width: 500px;
+  height: auto;
+  background-color: rgb(209, 202, 202);
+  position: absolute;
+  left: 50%;
+  top:50%;
+  border-radius: 20px;
+  transform: translate(-50%,-50%);
+
+}
+.menu-bar{
+  text-align: center;
+  cursor: pointer;
+  display: block;
+
+}
+.menu-bar a{
+  color: aliceblue;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+.login{
+
+}
+.register{
+
+}
+
+.line{
+  width: 100%;
+  background-color: azure;
+  height: 5px;
+
+}

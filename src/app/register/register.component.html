@@ -1,0 +1,34 @@
+<div class="block">
+  <form [formGroup]="DataRegiter" autocomplete="off">
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="userName">
+    </mat-form-field>
+    <mat-error>
+      <pre>{{ DataRegiter.get("userName")?.errors | json }}</pre>
+    </mat-error>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="passWord1">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="passWord2">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Fullname</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" class="mt-5 p-4">Login</button>
+
+  </form>
+  <br>
+
+  <code>{{ DataRegiter.value | json }}</code>
+
+</div>
+<pre>{{dataUser |json }}</pre>
